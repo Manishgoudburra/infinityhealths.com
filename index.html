@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infinity Greens — GREMIN | More Than Protein. Complete Recovery.</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ====== PARTICLE CANVAS ====== -->
+<canvas id="particleCanvas"></canvas>
+
+<!-- ====== NAVBAR ====== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">
+      <span class="logo-icon">∞</span>
+      <span class="logo-text">INFINITY <em>GREENS</em></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#products" class="nav-link">Products</a></li>
+      <li><a href="#benefits" class="nav-link">Benefits</a></li>
+      <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="#pricing" class="nav-link">Pricing</a></li>
+      <li><a href="#faq" class="nav-link">FAQ</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#pricing" class="nav-cta">Buy Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ====== CART NOTIFICATION ====== -->
+<div class="cart-toast" id="cartToast">
+  <span class="cart-toast-icon">✓</span>
+  <span id="cartToastMsg">Added to cart!</span>
+</div>
+
+<!-- ====== HERO ====== -->
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow glow-1"></div>
+  <div class="hero-glow glow-2"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge reveal">
+      <span class="badge-dot"></span>
+      NEW FORMULA — SCIENCE BACKED RECOVERY
+    </div>
+    <h1 class="hero-headline reveal">
+      More Than<br/>
+      <span class="gradient-text">Protein.</span><br/>
+      Complete<br/>
+      <span class="outline-text">Recovery.</span>
+    </h1>
+    <p class="hero-sub reveal">
+      Advanced amino acid recovery formula designed to help athletes recover faster,
+      reduce muscle cramps, and perform harder — every single session.
+    </p>
+    <div class="hero-btns reveal">
+      <a href="#pricing" class="btn-primary">
+        <span>Buy Now</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#benefits" class="btn-ghost">Explore Benefits</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num">40g</span>
+        <span class="stat-label">Protein / Serving</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">9</span>
+        <span class="stat-label">Essential Amino Acids</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">0</span>
+        <span class="stat-label">Artificial Fillers</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="product-ring"></div>
+    <div class="product-glow-halo"></div>
+    <div class="hero-product-img">
+      <div class="product-3d">
+        <div class="tub-body">
+          <div class="tub-label">
+            <div class="tub-brand">INFINITY GREENS</div>
+            <div class="tub-name">GREMIN</div>
+            <div class="tub-sub">ADVANCED RECOVERY</div>
+            <div class="tub-formula">40g · EAA · ELECTROLYTES</div>
+          </div>
+        </div>
+        <div class="tub-lid"></div>
+        <div class="tub-shadow"></div>
+      </div>
+    </div>
+    <div class="floating-badge fb-1">
+      <span class="fb-num">48H</span>
+      <span class="fb-text">Recovery<br/>Support</span>
+    </div>
+    <div class="floating-badge fb-2">
+      <span class="fb-num">2x</span>
+      <span class="fb-text">Faster<br/>Absorption</span>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ====== TRUST BAR ====== -->
+<div class="trust-bar">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="ti-icon">🏆</span> #1 Recovery Formula 2025</div>
+    <div class="trust-sep">|</div>
+    <div class="trust-item"><span class="ti-icon">🧪</span> Lab Tested & Certified</div>
+    <div class="trust-sep">|</div>
+    <div class="trust-item"><span class="ti-icon">🌿</span> 100% Natural Ingredients</div>
+    <div class="trust-sep">|</div>
+    <div class="trust-item"><span class="ti-icon">⚡</span> Free Shipping Over ₹999</div>
+    <div class="trust-sep">|</div>
+    <div class="trust-item"><span class="ti-icon">🔄</span> 30-Day Guarantee</div>
+  </div>
+</div>
+
+<!-- ====== PRODUCTS ====== -->
+<section id="products" class="section">
+  <div class="container">
+    <div class="section-label reveal">OUR LINEUP</div>
+    <h2 class="section-title reveal">Engineered for <span class="gradient-text">Greatness</span></h2>
+    <p class="section-sub reveal">Every product in the GREMIN range is formulated with precision-dosed ingredients and zero compromise.</p>
+
+    <div class="products-grid">
+
+      <div class="product-card reveal" data-product="Starter Sachet Pack" data-price="₹799">
+        <div class="product-card-badge">BESTSELLER</div>
+        <div class="product-card-img">
+          <div class="product-visual sachet-visual">
+            <div class="sachet-wrap">
+              <div class="sachet-inner">
+                <div class="s-brand">GREMIN</div>
+                <div class="s-type">RECOVERY</div>
+                <div class="s-weight">30g</div>
+              </div>
+            </div>
+            <div class="sachet-shadow"></div>
+          </div>
+          <button class="quickview-btn" data-id="1">Quick View</button>
+        </div>
+        <div class="product-card-info">
+          <div class="product-card-name">GREMIN Sachet Pack</div>
+          <div class="product-card-desc">Single-serve precision recovery — perfect for training days on the go.</div>
+          <div class="product-card-stars">★★★★★ <span>(218 reviews)</span></div>
+          <div class="product-card-bottom">
+            <div class="product-price">₹799 <span class="price-old">₹1,199</span></div>
+            <button class="btn-add-cart" onclick="addToCart('GREMIN Sachet Pack', '₹799')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal featured-card" data-product="GREMIN Tub 1kg" data-price="₹2,999">
+        <div class="product-card-badge popular">MOST POPULAR</div>
+        <div class="product-card-img">
+          <div class="product-visual tub-visual">
+            <div class="mini-tub">
+              <div class="mt-lid"></div>
+              <div class="mt-body">
+                <div class="mt-label">
+                  <div class="mt-brand">INFINITY GREENS</div>
+                  <div class="mt-name">GREMIN</div>
+                  <div class="mt-sub">1KG · 25 SERVINGS</div>
+                </div>
+              </div>
+              <div class="mt-shadow"></div>
+            </div>
+          </div>
+          <button class="quickview-btn" data-id="2">Quick View</button>
+        </div>
+        <div class="product-card-info">
+          <div class="product-card-name">GREMIN Protein Tub — 1kg</div>
+          <div class="product-card-desc">25 premium servings of the most advanced recovery formula ever engineered.</div>
+          <div class="product-card-stars">★★★★★ <span>(891 reviews)</span></div>
+          <div class="product-card-bottom">
+            <div class="product-price">₹2,999 <span class="price-old">₹3,999</span></div>
+            <button class="btn-add-cart" onclick="addToCart('GREMIN Tub 1kg', '₹2,999')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-product="Recovery Pro Pack" data-price="₹5,499">
+        <div class="product-card-badge">PRO PICK</div>
+        <div class="product-card-img">
+          <div class="product-visual pack-visual">
+            <div class="pack-box">
+              <div class="pb-top"></div>
+              <div class="pb-front">
+                <div class="pb-brand">GREMIN</div>
+                <div class="pb-title">RECOVERY<br/>PRO PACK</div>
+                <div class="pb-contents">2KG + SHAKER + GUIDE</div>
+              </div>
+              <div class="pb-side"></div>
+              <div class="pack-shadow"></div>
+            </div>
+          </div>
+          <button class="quickview-btn" data-id="3">Quick View</button>
+        </div>
+        <div class="product-card-info">
+          <div class="product-card-name">Recovery Pro Pack</div>
+          <div class="product-card-desc">2kg tub + premium shaker + athlete nutrition guide. The complete system.</div>
+          <div class="product-card-stars">★★★★★ <span>(432 reviews)</span></div>
+          <div class="product-card-bottom">
+            <div class="product-price">₹5,499 <span class="price-old">₹7,299</span></div>
+            <button class="btn-add-cart" onclick="addToCart('Recovery Pro Pack', '₹5,499')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====== QUICK VIEW MODAL ====== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="productModal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ====== WHY GREMIN ====== -->
+<section id="compare" class="section">
+  <div class="container">
+    <div class="section-label reveal">THE DIFFERENCE</div>
+    <h2 class="section-title reveal">Why GREMIN is <span class="gradient-text">Different</span></h2>
+
+    <div class="compare-table reveal">
+      <div class="compare-col compare-them">
+        <div class="compare-col-header">
+          <div class="compare-col-icon bad">✗</div>
+          <div class="compare-col-title">Normal Protein Powders</div>
+        </div>
+        <ul class="compare-list">
+          <li><span class="ci-dot bad"></span>Basic protein only — no recovery stack</li>
+          <li><span class="ci-dot bad"></span>Slower, incomplete muscle recovery</li>
+          <li><span class="ci-dot bad"></span>Persistent muscle soreness & fatigue</li>
+          <li><span class="ci-dot bad"></span>Frequent cramping during training</li>
+          <li><span class="ci-dot bad"></span>No electrolyte or hydration support</li>
+          <li><span class="ci-dot bad"></span>Basic, outdated formulation</li>
+          <li><span class="ci-dot bad"></span>Artificial fillers and sweeteners</li>
+        </ul>
+      </div>
+      <div class="compare-vs">VS</div>
+      <div class="compare-col compare-us">
+        <div class="compare-col-header">
+          <div class="compare-col-icon good">✓</div>
+          <div class="compare-col-title">GREMIN</div>
+        </div>
+        <ul class="compare-list">
+          <li><span class="ci-dot good"></span>EAA-optimized complete recovery stack</li>
+          <li><span class="ci-dot good"></span>48-hour accelerated recovery support</li>
+          <li><span class="ci-dot good"></span>Clinically targeted anti-soreness blend</li>
+          <li><span class="ci-dot good"></span>Electrolyte formula eliminates cramps</li>
+          <li><span class="ci-dot good"></span>Advanced hydration & absorption matrix</li>
+          <li><span class="ci-dot good"></span>Next-gen performance recovery science</li>
+          <li><span class="ci-dot good"></span>100% clean — zero artificial fillers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== BENEFITS ====== -->
+<section id="benefits" class="section">
+  <div class="container">
+    <div class="section-label reveal">WHY GREMIN</div>
+    <h2 class="section-title reveal">Built for <span class="gradient-text">Athletes</span></h2>
+    <p class="section-sub reveal">Six science-backed benefits engineered into every serving of GREMIN.</p>
+
+    <div class="benefits-grid">
+      <div class="benefit-card reveal">
+        <div class="benefit-icon">⚡</div>
+        <div class="benefit-title">Faster Recovery</div>
+        <div class="benefit-desc">Proprietary EAA matrix accelerates muscle repair by up to 48% compared to standard whey — get back to training sooner.</div>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="benefit-icon">🧬</div>
+        <div class="benefit-title">Essential Amino Acids</div>
+        <div class="benefit-desc">All 9 essential amino acids in optimized ratios — the building blocks your muscles actually need to grow and repair.</div>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="benefit-icon">🔋</div>
+        <div class="benefit-title">Reduced Muscle Cramps</div>
+        <div class="benefit-desc">Precision electrolyte blend with magnesium, potassium and sodium — eliminates cramps before they start.</div>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="benefit-icon">💧</div>
+        <div class="benefit-title">Hydration Support</div>
+        <div class="benefit-desc">Advanced cellular hydration matrix keeps your muscles primed and performing at peak output throughout every session.</div>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="benefit-icon">🏋️</div>
+        <div class="benefit-title">Better Performance</div>
+        <div class="benefit-desc">Train harder, more frequently. GREMIN's recovery engine means you're always ready to push limits — day after day.</div>
+      </div>
+      <div class="benefit-card reveal">
+        <div class="benefit-icon">🌿</div>
+        <div class="benefit-title">Easier Digestion</div>
+        <div class="benefit-desc">Enzyme-enhanced formula with DigeZyme® — zero bloat, zero discomfort. Just clean energy and clean recovery.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== TESTIMONIALS ====== -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div class="section-label reveal">ATHLETE STORIES</div>
+    <h2 class="section-title reveal">Real Results. Real <span class="gradient-text">Athletes.</span></h2>
+
+    <div class="carousel-wrapper reveal">
+      <div class="carousel" id="carousel">
+
+        <div class="testimonial-card">
+          <div class="tc-top">
+            <div class="tc-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-inner av1">RK</div>
+            </div>
+            <div class="tc-meta">
+              <div class="tc-name">Rahul Krishnamurthy</div>
+              <div class="tc-role">Competitive Bodybuilder · Bengaluru</div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="tc-quote">"GREMIN is the real deal. I've tried everything — ON, MuscleBlaze, you name it. Nothing touches this for recovery. My DOMS is practically gone. I'm training 6 days a week without burnout."</p>
+          <div class="tc-verified">✓ Verified Purchase · 90 days use</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="tc-top">
+            <div class="tc-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-inner av2">AS</div>
+            </div>
+            <div class="tc-meta">
+              <div class="tc-name">Ananya Sharma</div>
+              <div class="tc-role">CrossFit Athlete · Mumbai</div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="tc-quote">"The cramp support is INSANE. I used to cramp every single leg day. Since starting GREMIN two months ago — zero cramps. Zero. And my recovery between WODs is night and day better."</p>
+          <div class="tc-verified">✓ Verified Purchase · 60 days use</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="tc-top">
+            <div class="tc-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-inner av3">VP</div>
+            </div>
+            <div class="tc-meta">
+              <div class="tc-name">Vikram Pillai</div>
+              <div class="tc-role">Powerlifter · Hyderabad</div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="tc-quote">"As a powerlifter my joints and muscles take a beating. GREMIN has cut my recovery time in half. I'm hitting PRs I thought were months away. This is my non-negotiable supplement now."</p>
+          <div class="tc-verified">✓ Verified Purchase · 4 months use</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="tc-top">
+            <div class="tc-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-inner av4">MN</div>
+            </div>
+            <div class="tc-meta">
+              <div class="tc-name">Mohammed Naser</div>
+              <div class="tc-role">Endurance Runner · Delhi</div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="tc-quote">"Marathon training is brutal. GREMIN's hydration and electrolyte support keeps me going on long runs. I recover overnight now instead of needing 2-3 days. Game changing for endurance athletes."</p>
+          <div class="tc-verified">✓ Verified Purchase · 75 days use</div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="tc-top">
+            <div class="tc-avatar">
+              <div class="avatar-ring"></div>
+              <div class="avatar-inner av5">PD</div>
+            </div>
+            <div class="tc-meta">
+              <div class="tc-name">Priya Desai</div>
+              <div class="tc-role">Fitness Coach · Pune</div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="tc-quote">"I recommend GREMIN to all my clients now. The digestion is so clean — no bloating, no heaviness. They feel great during workouts and recover faster. The science behind this formula is genuinely impressive."</p>
+          <div class="tc-verified">✓ Verified Purchase · 5 months use</div>
+        </div>
+
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="prevBtn">‹</button>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <button class="carousel-btn" id="nextBtn">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PRICING ====== -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div class="section-label reveal">CHOOSE YOUR PACK</div>
+    <h2 class="section-title reveal">Invest in Your <span class="gradient-text">Recovery</span></h2>
+    <p class="section-sub reveal">Every plan includes free shipping and our 30-day satisfaction guarantee.</p>
+
+    <div class="pricing-grid">
+
+      <div class="pricing-card reveal">
+        <div class="pricing-tier">STARTER</div>
+        <div class="pricing-name">Starter Pack</div>
+        <div class="pricing-desc">Perfect for athletes new to advanced recovery supplementation.</div>
+        <div class="pricing-price">₹799<span>/month</span></div>
+        <div class="pricing-save">Save ₹400</div>
+        <ul class="pricing-features">
+          <li>✓ 10 Sachets (10 servings)</li>
+          <li>✓ GREMIN Recovery Formula</li>
+          <li>✓ Nutrition & Timing Guide</li>
+          <li>✓ Free Shipping</li>
+          <li class="disabled">✗ Shaker Bottle</li>
+          <li class="disabled">✗ Athlete Support</li>
+          <li class="disabled">✗ Priority Queue Access</li>
+        </ul>
+        <button class="btn-price" onclick="addToCart('Starter Pack', '₹799')">Get Started</button>
+      </div>
+
+      <div class="pricing-card popular-plan reveal">
+        <div class="popular-ribbon">MOST POPULAR</div>
+        <div class="pricing-tier">ATHLETE</div>
+        <div class="pricing-name">Athlete Pack</div>
+        <div class="pricing-desc">The most popular choice among serious athletes and gym regulars.</div>
+        <div class="pricing-price">₹2,999<span>/month</span></div>
+        <div class="pricing-save">Save ₹1,000</div>
+        <ul class="pricing-features">
+          <li>✓ 1kg Tub (25 servings)</li>
+          <li>✓ GREMIN Recovery Formula</li>
+          <li>✓ Nutrition & Timing Guide</li>
+          <li>✓ Free Shipping</li>
+          <li>✓ Premium Shaker Bottle</li>
+          <li>✓ Athlete Support Access</li>
+          <li class="disabled">✗ Priority Queue Access</li>
+        </ul>
+        <button class="btn-price popular-btn" onclick="addToCart('Athlete Pack', '₹2,999')">Get Athlete Pack</button>
+      </div>
+
+      <div class="pricing-card reveal">
+        <div class="pricing-tier">PRO BODYBUILDER</div>
+        <div class="pricing-name">Pro Pack</div>
+        <div class="pricing-desc">The ultimate recovery system for elite bodybuilders and pro-level athletes.</div>
+        <div class="pricing-price">₹5,499<span>/month</span></div>
+        <div class="pricing-save">Save ₹1,800</div>
+        <ul class="pricing-features">
+          <li>✓ 2kg Tub (50 servings)</li>
+          <li>✓ GREMIN Recovery Formula</li>
+          <li>✓ Nutrition & Timing Guide</li>
+          <li>✓ Free Shipping</li>
+          <li>✓ Premium Shaker Bottle</li>
+          <li>✓ Athlete Support Access</li>
+          <li>✓ Priority Queue Access</li>
+        </ul>
+        <button class="btn-price" onclick="addToCart('Pro Bodybuilder Pack', '₹5,499')">Go Pro</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====== FAQ ====== -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="section-label reveal">KNOW MORE</div>
+    <h2 class="section-title reveal">Frequently Asked <span class="gradient-text">Questions</span></h2>
+
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Is GREMIN beginner friendly?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Absolutely. GREMIN is engineered for all fitness levels — from first-time gym-goers to elite athletes. The clean, enzyme-enhanced formula is gentle on the stomach and provides exactly what your muscles need post-workout, regardless of your training level. Start with one scoop and build up as needed.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>How does GREMIN improve recovery?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            GREMIN's recovery mechanism works on three levels: (1) The complete EAA matrix floods muscles with all 9 essential amino acids needed for rapid protein synthesis. (2) The anti-inflammatory herbal blend reduces oxidative stress and soreness. (3) The electrolyte matrix replenishes what's lost during training, accelerating cellular recovery and hydration.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Does GREMIN help reduce cramps?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Yes — this is one of GREMIN's most celebrated benefits. Muscle cramps are largely caused by electrolyte imbalances and dehydration. GREMIN's precision electrolyte blend (magnesium, potassium, sodium, chloride) directly addresses these root causes. Most athletes report a significant reduction in cramping within the first 2 weeks of consistent use.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>When should I consume GREMIN?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            The optimal window is within 30 minutes post-workout — this is when your muscles are most receptive to amino acids and recovery nutrients. However, GREMIN is also effective as a morning protein source or before bed to support overnight muscle repair. Mix one scoop with 250–300ml of cold water or milk for best results.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Is GREMIN safe for daily use?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            Yes. GREMIN is formulated for daily use and is manufactured in a certified GMP facility with every batch independently lab-tested for purity and potency. It contains zero banned substances, zero artificial colors, and zero harmful additives. It is also tested and certified by FSSAI for compliance with Indian food safety standards.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====== CONTACT ====== -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-label reveal">GET IN TOUCH</div>
+    <h2 class="section-title reveal">Let's <span class="gradient-text">Connect</span></h2>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="newsletter-block">
+          <h3>Join the Tribe</h3>
+          <p>Get exclusive deals, training tips, and early access to new formulas. No spam, ever.</p>
+          <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+            <input type="email" placeholder="Your email address" required/>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="social-block">
+          <h4>Follow Us</h4>
+          <div class="socials">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              Instagram
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+              YouTube
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter/X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Twitter / X
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" onsubmit="handleContact(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required/>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="you@email.com" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="How can we help?"/>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us anything..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary form-submit">Send Message
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <span class="logo-icon">∞</span>
+      <span class="logo-text">INFINITY <em>GREENS</em></span>
+    </div>
+    <p class="footer-tagline">More Than Protein. Complete Recovery.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Refund Policy</a>
+      <a href="#">Lab Reports</a>
+    </div>
+    <p class="footer-copy">© 2025 Infinity Greens Nutrition Pvt. Ltd. All rights reserved. | FSSAI Licensed | Made in India</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
